@@ -44,7 +44,7 @@ def Init():
 			"onUserCooldown": "$user, $command is still on user cooldown for $cd minutes!",
 			"responseNotEnoughPoints": "$user you have only $points $currency to roll the dices.",
 			"responseWon": "$user rolls the dices $dices and wins $reward $currency",
-			"responseLost": "$user rolls the dices $dices and looses $cost $currency"
+			"responseLost": "$user rolls the dices $dices and loses $cost $currency"
 		}
 
 def Execute(data):
