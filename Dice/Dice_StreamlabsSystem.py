@@ -35,7 +35,7 @@ def Init():
 			"reward2": 3,
 			"reward3": 4,
 			"reward4": 5,
-			"reward5": 100,
+			"reward5": 25,
 			"useCooldown": True,
 			"useCooldownMessages": True,
 			"cooldown": 1,
@@ -90,10 +90,10 @@ def Execute(data):
 			dicesSum = dice1 + dice2 + dice3
 			reward = ""
 
-			if dicesSum < 11:
+			if dicesSum < 12:
 				outputMessage = settings["responseLost"]
 				reward = costs
-			elif dicesSum >= 11 and dicesSum <= 14:
+			elif dicesSum >= 12 and dicesSum <= 14:
 				outputMessage = (settings["responseWon"])
 				reward = costs * settings["reward1"]
 				Parent.AddPoints(userId, username, int(reward))
